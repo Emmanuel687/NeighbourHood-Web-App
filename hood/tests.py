@@ -59,3 +59,27 @@ class NeighbourHoodTest(TestCase):
         self.neighbourhood.delete_neighbourhood()
         testsaved = NeighbourHood.objects.all()
         self.assertFalse(len(testsaved) > 0)
+
+class BusinessTest(TestCase): 
+
+    def setUp(self):
+     
+        self.user = User(username="tary", password="123")
+        self.user.save()
+        self.neighbourhood =  NeighbourHoodForm(name = "Nairobi", location= "Ngara", admin = self.user,description='tarararra')
+        self.neighbourhood.save()
+        self.business = Business(user=self.user,name="asap", neighbourhood=self.neighbourhood,email="aa@gmail.com", description="xxxx")
+        self.business.save()
+
+    def test_instance(self):
+        self.assertTrue(isinstance(self.business,Business))
+
+    def test_save_business(self):
+        self.business.save_business()
+        business = Business.objects.all()
+        self.assertTrue(len(business) > 0)
+
+    def test_delete_business(self):
+        self.business.delete_business()
+        business = Business.objects.all()
+        self.assertFalse(len(business) > 0)
