@@ -1,4 +1,4 @@
-from django.conf.urls import re_path,path
+from django.urls import re_path,path
 from . import views
 from django.contrib.auth import views as auth_views
 from django.contrib import admin

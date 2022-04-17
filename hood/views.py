@@ -1,7 +1,7 @@
 from django.shortcuts import render,redirect,get_object_or_404
 from django.http  import HttpResponse
 
-from thehood.models import Business, NeighbourHood, Post, Profile
+from hood.models import Business, NeighbourHood, Post, Profile
 from .forms import ProfileUpdateForm,UserUpdateForm,NeighbourHoodForm,PostForm,BusinessForm
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
