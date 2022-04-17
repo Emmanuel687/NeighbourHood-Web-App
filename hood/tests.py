@@ -36,3 +36,26 @@ class ProfileTest(TestCase):
         self.profile.update_profile(self.profile.user_id)
         self.profile.save_profile()
         self.assertTrue(Profile,self.profile.user)
+
+
+class NeighbourHoodTest(TestCase): 
+
+    def setUp(self):
+     
+        self.user = User(username="tary", password="123")
+        self.user.save()
+        self.neighbourhood =  NeighbourHood(name = "Nairobi", location= "Ngara", admin = self.user,description='xxxx', photo="")
+        self.neighbourhood.save()
+   
+    def test_instance(self):
+        self.assertTrue(isinstance(self.neighbourhood,NeighbourHood))
+
+    def test_save_neighbourhood(self):
+        self.neighbourhood.save_neighbourhood()
+        neighbourhood = NeighbourHood.objects.all()
+        self.assertTrue(len(neighbourhood) > 0)
+
+    def test_delete_neighbourhoodhood(self):
+        self.neighbourhood.delete_neighbourhood()
+        testsaved = NeighbourHood.objects.all()
+        self.assertFalse(len(testsaved) > 0)
