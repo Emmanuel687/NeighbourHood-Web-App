@@ -23,3 +23,8 @@ class BusinessForm(forms.ModelForm):
     class Meta:
         model = Business
         fields = ['name','email','description','neighbourhood','user']
+
+class PostForm(forms.ModelForm):
+    class Meta:
+        model = Post
+        fields = ['title','description','image','hood','user']
