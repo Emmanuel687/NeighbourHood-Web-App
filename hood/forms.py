@@ -13,3 +13,13 @@ class UserUpdateForm(forms.ModelForm):
     class Meta:
         model = User
         fields = ['username','email']
+
+class NeighbourHoodForm(forms.ModelForm):
+    class Meta:
+        model = NeighbourHood
+        fields = ['name','location','admin','photo','description','health_toll','police_toll']
+
+class BusinessForm(forms.ModelForm):
+    class Meta:
+        model = Business
+        fields = ['name','email','description','neighbourhood','user']
