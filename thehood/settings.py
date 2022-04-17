@@ -50,6 +50,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'hood.apps.HoodConfig',
     'bootstrap4',
+    'crispy_forms',
+    'cloudinary',
 ]
 
 MIDDLEWARE = [
@@ -144,3 +146,4 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+CRISPY_TEMPLATE_PACK = 'uni_form'

@@ -14,11 +14,11 @@ import datetime as dt
 
 
 
-@login_required
+
 def home(request):
     return render(request, 'home.html')
 
-@login_required
+
 def profile(request):
     try:
         profile = request.user.profile
