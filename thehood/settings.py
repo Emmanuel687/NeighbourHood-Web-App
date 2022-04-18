@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'bootstrap4',
     'crispy_forms',
     'cloudinary',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -146,4 +147,4 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-CRISPY_TEMPLATE_PACK = 'uni_form'
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
