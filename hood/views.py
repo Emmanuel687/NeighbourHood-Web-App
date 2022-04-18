@@ -1,4 +1,4 @@
-from django.shortcuts import render,redirect,get_object_or_404
+from django.shortcuts import get_object_or_404, render, redirect
 from django.http  import HttpResponse
 
 from hood.models import Business, NeighbourHood, Post, Profile
@@ -6,19 +6,13 @@ from .forms import ProfileUpdateForm,UserUpdateForm,NeighbourHoodForm,PostForm,B
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 import datetime as dt
-
 # Create your views here.
-# def welcome(request):
-#     return render(request,'welcome.html')
 
-
-
-
-
+@login_required
 def home(request):
     return render(request, 'home.html')
 
-
+@login_required
 def profile(request):
     try:
         profile = request.user.profile
