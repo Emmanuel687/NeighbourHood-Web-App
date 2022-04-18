@@ -6,6 +6,8 @@ Emmanuel Koech
 This is a an application where a user must sign up first then update their profile.This will enable the user to join a hood and once the user has joined  a hood, he/she can see businesses and news in the neighbourhood they belong to.
 
 ## UserExperience
+This is the homelanding Page
+/home/manu/Pictures/Screenshot from 2022-04-18 15-59-03.png
 
 ## Setup/Installation Requirements
 
