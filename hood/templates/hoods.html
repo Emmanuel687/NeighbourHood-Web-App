@@ -7,7 +7,7 @@
         {% for hood in hoodss %}
         <div class="col-md-4">
             <div class="card mb-4" style="min-height:320px">
-                <h6 class="card-title"><a href="{% url 'single-hood' hood.id%}" style="color:black;"> {{hood.name }}</a></h6>
+                <h6 class="card-title"><a href="{% url 'single-hood' hood.id%}" style="color:#000000;"> {{hood.name }}</a></h6>
                 <img src="{{ hood.photo.url }}" class="card-img-top img-fluid" alt="{{ hood.name }}">
                 <div class="card-body">
                     <p class="card-text">{{hood.location}}</p>
@@ -18,10 +18,10 @@
                     {%elif not request.user.profile.neighbourhood%}
 
 
-                    <a class="btn-sm" href="{%url 'join-hood' hood.id%}" style="background-color: red;color: white;">Join Hood</a>
+                    <a class="btn-sm" href="{%url 'join-hood' hood.id%}" style="background-color: rgb(49, 39, 39);color: white;">Join Hood</a>
 
                     {%endif%}
-                    <a href="{% url 'single-hood' hood.id %}" class="btn btn-primary btn-sm ml-4" style="background-color: white;color: black;">View hood</a>
+                    <a href="{% url 'single-hood' hood.id %}" class="btn btn-primary btn-sm ml-4" style="background-color: white;color: rgb(22, 5, 5);">View hood</a>
                 </div>
             </div>
         </div>
