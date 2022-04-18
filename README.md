@@ -6,8 +6,21 @@ Emmanuel Koech
 This is a an application where a user must sign up first then update their profile.This will enable the user to join a hood and once the user has joined  a hood, he/she can see businesses and news in the neighbourhood they belong to.
 
 ## UserExperience
-This is the homelanding Page
-/home/manu/Pictures/Screenshot from 2022-04-18 15-59-03.png
+This is the homelanding Page,Click on Join Hood to Redirect to the join hood page.
+![Screenshot from 2022-04-18 15-59-03](https://user-images.githubusercontent.com/93251478/163813979-4db78815-4114-4c77-aeea-2137e3421800.png)
+
+This is the page,Redirected to and you can join a new hood or view hoods.
+![Screenshot from 2022-04-18 16-02-04](https://user-images.githubusercontent.com/93251478/163814242-5d89cf62-6c76-498b-a8e7-1cf2d5d458e0.png)
+
+This is the page where you can view or Add you business after joining a hood.
+![Screenshot from 2022-04-18 15-59-33](https://user-images.githubusercontent.com/93251478/163814570-705c10b1-4b13-42c5-82b7-82c8e37000e2.png)
+
+
+
+
+
+
+
 
 ## Setup/Installation Requirements
 
